@@ -1,5 +1,11 @@
 name: 'Dotnet Performance'
 description: 'A GitHub action based on dotnet/BenchmarkDotNet'
+inputs:
+  performance-report:
+    description: 'Path to the performance report to analyze'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.performance-report }}
