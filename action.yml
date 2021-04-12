@@ -1,0 +1,5 @@
+name: 'Dotnet Performance'
+description: 'A GitHub action based on dotnet/BenchmarkDotNet'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
